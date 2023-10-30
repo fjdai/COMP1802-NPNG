@@ -1,0 +1,26 @@
+from{
+    background-color: #eee;
+    display: inline-block;
+}
+form span{
+    display: inline-block;
+    width:80px;
+    background-color: #eee;
+    margin: 10px 3px 3 px 8px;
+}
+form input{
+    width: 150px;
+    height: 20px;
+    margin: 1px 5px 10px 15px;
+    box-sizing: border-box;
+}
+form select{
+    margin: 1px 15px ;
+    width: 150px;
+    height: 20px;
+}
+form input[type='submit']{
+    display: block;
+    margin: 10px 0px 12px 98px;
+    width: 80px;height: 30px;
+}
