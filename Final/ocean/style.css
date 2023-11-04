@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: url("/assets/background.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.coral-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 10;
+}
+
+.coral-container .coral1 {
+    position: absolute;
+    height: 65%;
+    left: 5%;
+    bottom: -3%;
+}
+
+.coral-container .coral2 {
+    position: absolute;
+    height: 30%;
+    bottom: 0%;
+    left: 75%;
+}
+
+.seaweed-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 14;
+}
+
+.seaweed-container .seaweed1 {
+    position: absolute;
+    bottom: 0%;
+    left :0%;
+}
+
+.seaweed-container .seaweed2 {
+    position: absolute;
+    bottom: -2%;
+    left :-3%;
+
+}
+
+.seaweed-container .seaweed4 {
+    position: absolute;
+    bottom: -2%;
+    left : 6%;
+
+}
+
+.seaweed-container .seaweed3 {
+    position: absolute;
+    bottom: 0%;
+    left: 87%;
+
+}
+
+.bubble-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 15;
+}
+  
+.bubble-container img {
+    position: absolute;
+    top: 140%;
+    transform: translateX(-50%);
+}
+  
+.bubble1 {
+    left: 16%;
+    animation: bubbleAnim 9s linear infinite 2s;
+}
+.bubble2 {
+    left: 48%;
+    animation: bubbleAnim 9s linear infinite 8s;
+}
+.bubble3 {
+    left: 80%;
+    animation: bubbleAnim 9s linear infinite 5s;
+}
+  
+@keyframes bubbleAnim {
+    0% {
+      top: 140%;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      top: 5%;
+      opacity: 0;
+    }
+}
+
+.fish-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 13;
+}
+
+.fish-container img {
+    height: 100px;
+    position: absolute;
+}
+
+.fish3 {
+    height: 150px !important;
+    left: 15%;
+    bottom: 40%;
+    animation: fishAnimation3 50s linear infinite;
+}
+
+@keyframes fishAnimation3 {
+    0% {
+     bottom: 40%;
+    }
+    50% {
+        bottom: 55%;
+
+    }
+}
+
+.fish6 {
+    height: 150px !important;
+    right: -40%;
+    top: 110%;
+    animation: fishAnimation6 50s linear infinite;
+}
+
+@keyframes fishAnimation6 {
+    0% {
+      right: -40%;
+      top: 110%;
+    }
+    100% {
+      right: 40%;
+      top: -30%;
+    }
+}
+
+.fish8 {
+    height: 250px !important;
+    left: -30%;
+    bottom: -10%;
+    transform: rotateX(49deg) rotateY(185deg) rotateZ(64deg);
+    animation: fishAnimation8 20s linear infinite;
+}
+
+@keyframes fishAnimation8 {
+    0% {
+        left: -100%;
+        bottom: -10%;
+    }
+    30%{
+        bottom: 30%;
+    }
+    50%{
+        bottom: 5%;
+    }
+    100% {
+        left: 200%;
+        bottom: 15%;
+    }
+}
+
