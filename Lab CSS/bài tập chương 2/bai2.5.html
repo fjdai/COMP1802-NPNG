@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLB</title>
+</head>
+<body>
+
+    <form  method="get">
+        <caption><b>đăng kí thành viên</b></caption>
+        <table border="1">
+            <tr>
+                <td>họ tên</td>
+                <td >
+                    <input name="hoten"/>
+                </td>
+            </tr>
+            <tr>
+                <td>tên đăng nhập</td>
+                <td >
+                    <input name="tendangnhap"/>
+                </td>
+            </tr>
+                <td>mật khẩu</td>
+                <td>
+                    <input type="password" name="matkhau" />
+                </td>
+            </tr>
+            <tr>
+                <td>Gõ lại mật khẩu</td>
+                <td>
+                    <input type="password" name="golaimatkhau"/>
+                </td>
+            <tr>
+            <tr>
+                <td>nghề nghiệp</td>
+                    <td>
+                        <select name="nghenghiep" >
+                            <option value="BS"> bac si</option>
+                            <option value="HSSV"> hoc sinh sinh vien</option>
+                            <option value="GV"> giao vien</option>
+                        </select>
+                    </td>
+            </tr>
+            <tr>
+                <td>giới tính</td>
+                <td>
+                    <input type="radio" value="nam" name="gioitinh"> nam
+                    <input type="radio" value="nu" name="gioitinh" checked>nữ
+                </td>
+            </tr>
+            <tr>
+                <td>ngoại ngữ</td>
+                <td>
+                    <input type="checkbox" value="AV" name="ngoaingu">anh văn
+                      
+                    <input type="checkbox" value="NV" name="ngoaingu">nhật văn
+                    
+                    <input type="checkbox" value="HV" name="ngoaingu"> hàn văn
+                </td>
+            </tr>
+            <tr>
+                <td>Quên quán</td>
+                <td>
+                    <input list="browsers" name="browsers" id="browser">
+                    <datalist id="browsers">
+                        <option value="sài gòn">
+                        <option value="hà nội">
+                        <option value="hải phòng">
+                        <option value="đà nẵng">
+                        <option value="đăk lăk">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Tuổi</td>
+                <td>
+                    <input type="number" min="18" max="45" value="20">
+                </td>
+            </tr>
+            <tr>
+                <td>hinh</td>
+                <td>
+                    <input type="file" name="hinh" />
+                </td>
+            </tr>
+            <tr>
+                <td>so thich</td>
+                <td>
+                    <textarea name="sothich"  cols="20" rows="2"></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <th aria-colspan="2" colspan="2">
+                    <button type="submit" >đăng kí</button>
+                    <button type="submit" >nhập lại</button>
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
