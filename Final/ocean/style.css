@@ -182,4 +182,46 @@
         bottom: 15%;
     }
 }
+.fish1{
+        height: 150px !important;
+        left: -30%;
+        bottom: -5%;
+        animation: fishAnimation1 20s linear infinite;
+}
+@keyframes fishAnimation1 {
+    0%{
+        left: -20%;
+        top: 10%;
+    }
+    50%{
+        left: 40%;
+        top:30% ;
+    }
+    100%{
+        left:150% ;
+        top: -15%;
+    }
+}
+.fish2{
+    height: 100px !important;
+    right: -30%;
+    bottom: -5%;
+    animation: fishAnimation2 17s linear infinite;
+}
+@keyframes fishAnimation2 {
+    0%{
+         right: -20%;
+         top: 10%;
+    }
+    50%{
+        right: 40%;
+        top:30% ;
+    }
+    100%{
+        right:150% ;
+        top: 105%;
+    }
+}
+
+
 
