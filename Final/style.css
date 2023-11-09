@@ -290,5 +290,31 @@
     top: 75%;
 }
 }
+#fish7{
+    left:500px; top: 1500px;
+	width: 200px; height: 147px;
+	-webkit-animation-name: fish7;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+    -webkit-animation-delay: 0s;
+	-webkit-animation-direction:normal
+}
+@-webkit-keyframes fish7
+{
+    0%{left: -10%;top: 40px;}
+    10%{left:20% ;top:29px;}
+    20%{left:40% ;top:56px;}
+    30%{left:60% ;top:30px;}
+    40%{left:80% ;top:40px;}
+    50%{left: 110%;top:36px;}
+    60%{left:80% ;top:40px;}
+    70%{left:60% ;top:30px;}
+    80%{left:40% ;top:56px;}
+    90%{left:20% ;top:29px;}
+    99%{top: 34px;transform: rotateY(180deg)}
+    100%{top: 40px;left:-10%;}
+}
 
 
