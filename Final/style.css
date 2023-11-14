@@ -414,16 +414,16 @@
 }
 
 .fish1 {
-    height: 150px !important;
-    left: -30%;
-    bottom: -5%;
-    -webkit-animation: fishAnimation1 20s linear infinite;
+    height: 120px !important;
+    left: -20%;
+    top: 1%;
+    -webkit-animation: fishAnimation1 30s linear infinite;
 }
 
 .fish2 {
-    height: 100px !important;
-    right: -30%;
-    bottom: -5%;
+    height: 120px !important;
+    right: -20%;
+    bottom: 1%;
     -webkit-animation: fishAnimation2 17s linear infinite;
 }
 
@@ -469,23 +469,48 @@
     left: -30%;
     bottom: -10%;
     transform: rotateX(49deg) rotateY(185deg) rotateZ(64deg);
-    -webkit-animation: fishAnimation8 20s linear infinite;
+    -webkit-animation: fishAnimation8 17s linear infinite;
 }
 
 @-webkit-keyframes fishAnimation1 {
     0% {
-        left: -20%;
+        left: -15%;
         top: 10%;
     }
-
-    50% {
-        left: 40%;
+    20%{
+        left: 50%;
+        top: 20%;
+    }
+    30%{
+        left: 80%;
+    }
+    40%{
+        left: 100%;
+        top: 40%;
+    }
+    50%{
+        left: 120%;
+        top: 70%;
+    }
+    60%{
+        left: 70%;
+        top: 60%;
+    }
+    85%{
+        left: 50%;
+    }
+    90%{
+        left: 20%;
         top: 30%;
     }
-
+    95%{
+        left: -7%;
+        top: 10%;
+        transform: rotateY(180deg)
+    }
     100% {
-        left: 150%;
-        top: -15%;
+        left: -15%;
+        top: 40%;
     }
 }
 
@@ -494,15 +519,36 @@
         right: -20%;
         top: 10%;
     }
-
-    50% {
-        right: 40%;
+    20%{
+        right: 30%;
+    }
+    30%{
+        right: 60%;
         top: 30%;
+    }
+    39%{
+        right: 107%;
+    }
+
+    59% {
+        right: 105%;
+        top: 30%;
+    }
+    70%{
+        right: 80%;
+    }
+    80%{
+        right: 40%;
+    }
+    99%{
+        right: -10%;
+        top: 55%;
+        transform: rotateY(180deg)
     }
 
     100% {
-        right: 150%;
-        top: 105%;
+        right:-10%;
+        top: 63%;
     }
 }
 
