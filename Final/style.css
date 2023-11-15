@@ -85,7 +85,7 @@
     top: 140%;
     transform: translateX(-50%);
 }
-
+/*
 .bubble1 {
     left: 16%;
     -moz-animation: bubbleAnim 9s linear infinite 2s;
@@ -177,7 +177,7 @@
     left: 500px;
     top: 1500px;
     -moz-animation: fishAnimation7 20s linear infinite 0s normal;
-    /* -moz-animation-play-state: running;    */
+    /* -moz-animation-play-state: running;    *//*
 }
 
 .fish8 {
@@ -368,7 +368,7 @@
         left: 200%;
         bottom: 15%;
     }
-}
+} */
 
 .bubble1 {
     left: 16%;
@@ -437,14 +437,14 @@
 .fish4 {
     height: 70px !important;
     left: -10%;
-    bottom: -10%;
-    -webkit-animation: fishAnimation4 15s linear infinite;
+    bottom: 50%;
+    -webkit-animation: fishAnimation4 25s linear infinite;
 }
 
 .fish5 {
     height: 80px !important;
-    left: -30%;
-    bottom: -5%;
+    right: -20%;
+    bottom: 10%;
     -webkit-animation: fishAnimation5 20s linear infinite;
 }
 
@@ -543,7 +543,7 @@
     99%{
         right: -10%;
         top: 55%;
-        transform: rotateY(180deg)
+        transform: scaleX(-1);
     }
 
     100% {
@@ -565,47 +565,101 @@
 
 @-webkit-keyframes fishAnimation4 {
     0% {
-        left: -10%;
-        bottom: 10%;
+        left: -15%;
+        top: 80%;
     }
-
-    30% {
-        left: 30%;
-        bottom: 25%;
-
-    }
-
-    60% {
-        left: 50%;
-        bottom: 15%;
-
-    }
-
-    100% {
-        left: 70%;
-        bottom: -10%;
-    }
-}
-
-@-webkit-keyframes fishAnimation5 {
-
-    0% {
-        left: -10%;
-        top: 20%;
-    }
-
-    50% {
-        left: 40%;
-        top: 50%;
-
-    }
-
-    100% {
-        left: 120%;
+    20%{
+        left: 20%;
         top: 75%;
     }
+    30%{
+        left: 50%;
+        top: 70%;
+    }
+    35%{
+        left: 60%;
+        top: 70%;
+    }
+    40%{
+        left: 80%;
+        top: 65%;
+    }
+    45%{
+        left: 100%;
+        top: 40%;
+    }
+    50%{
+        left: 120%;
+        top: 35%;
+    }
+    55%{
+        left: 90%;
+    }
+    60%{
+        left: 70%;
+        top: 32%;
+    }
+    70%{
+        left:45%;
+        top: 30%;
+    }
+    80%{
+        left: 30%;
+    }
+    90%{
+        left: 20%;
+        top: 26%;
+    }
+    95%{
+        left: -7%;
+        top: 24%;
+        transform: rotateY(180deg);
+    }
+    100% {
+        left: -15%;
+        top: 25%;
+    }
 }
+@-webkit-keyframes fishAnimation5 {
+    0% {
+        right: -20%;
+        top: 10%;
+    }
+    2%{
+        right: -15%;
+        transform: scaleX(-1);
+    }
+    10%{
+        right: 10%;
+        top: 13%;
+    }
+    20%{
+        right: 30%;
+    }
+    30%{
+        right: 60%;
+        top: 12%;
+    }
+    39%{
+        right: 107%;
+    }
 
+    59% {
+        right: 105%;
+        top: 30%;
+    }
+    70%{
+        right: 80%;
+    }
+    80%{
+        right: 40%;
+    }
+    100% {
+        right:-10%;
+        top: 83%;
+    }
+    
+}    
 @-webkit-keyframes fishAnimation6 {
     0% {
         right: -40%;
