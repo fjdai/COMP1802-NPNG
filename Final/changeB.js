@@ -12,9 +12,11 @@ document.querySelector("#bg3").addEventListener("click", function () {
 let audio = document.getElementById('myaudio'),
     ctrl = document.getElementById('audio-control');
 
+
+let pause = ctrl.innerHTML === 'Pause music';
+
 ctrl.onclick = () => {
 
-    let pause = ctrl.innerHTML === 'Pause music';
     ctrl.innerHTML = pause ? 'Play music' : 'Pause music';
 
     let method = pause ? 'pause' : 'play';
@@ -34,8 +36,7 @@ change.onclick = () => {
 
     sourceAudio.src = one ? music[1] : music[0];
     audio.load();
-    audio.play();
-    console.log(sourceAudio)
+    if (pause) { audio.play(); }
 
     return false;
 }
