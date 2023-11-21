@@ -173,8 +173,8 @@
 
 .fish5 {
     height: 80px !important;
-    left: -30%;
-    bottom: -5%;
+    right: -20%;
+    top: 10%;
     -moz-animation: fishAnimation5 20s linear infinite;
 }
 
@@ -271,23 +271,54 @@
     }
 }
 
-@-moz-keyframes fishAnimation5 {
 
+@-moz-keyframes fishAnimation5 {
     0% {
-        left: -10%;
-        top: 20%;
+        right: -20%;
+        top: 10%;
     }
 
-    50% {
-        left: 40%;
-        top: 50%;
+    2% {
+        right: -15%;
+        transform: scaleX(-1);
+    }
 
+    10% {
+        right: 10%;
+        top: 13%;
+    }
+
+    20% {
+        right: 30%;
+    }
+
+    30% {
+        right: 60%;
+        top: 12%;
+    }
+
+    39% {
+        right: 107%;
+    }
+
+    59% {
+        right: 105%;
+        top: 30%;
+    }
+
+    70% {
+        right: 80%;
+    }
+
+    80% {
+        right: 40%;
     }
 
     100% {
-        left: 120%;
-        top: 75%;
+        right: -10%;
+        top: 83%;
     }
+
 }
 
 @-moz-keyframes fishAnimation6 {
@@ -458,7 +489,7 @@
 .fish5 {
     height: 80px !important;
     right: -20%;
-    bottom: 10%;
+    top: 10%;
     -webkit-animation: fishAnimation5 20s linear infinite;
 }
 
