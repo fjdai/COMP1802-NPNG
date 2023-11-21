@@ -14,15 +14,16 @@ let audio = document.getElementById('myaudio'),
 
 
 let pause = ctrl.innerHTML === 'Pause music';
+let check = false;
 
 ctrl.onclick = () => {
     pause = ctrl.innerHTML === 'Pause music';
     ctrl.innerHTML = pause ? 'Play music' : 'Pause music';
 
     let method = pause ? 'pause' : 'play';
+    check = true;
 
     audio[method]();
-    console.log(pause);
     return false;
 };
 
@@ -37,7 +38,7 @@ change.onclick = () => {
 
     sourceAudio.src = one ? music[1] : music[0];
     audio.load();
-    if (!pause) {
+    if (!pause && check) {
         audio.play();
         return false;
     }
