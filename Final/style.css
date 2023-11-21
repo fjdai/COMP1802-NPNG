@@ -855,7 +855,7 @@ li .dropdown {
     display: none;
     position: fixed;
     /* min-width: 160px; */
-    max-width: 160px;
+    max-width: 149px;
     z-index: 10;
 }
 
